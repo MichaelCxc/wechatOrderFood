@@ -16,6 +16,7 @@ import java.util.Date;
 public class OrderMaster {
 
 
+    @Id
     private String orderId;
 
     private String buyerName;
