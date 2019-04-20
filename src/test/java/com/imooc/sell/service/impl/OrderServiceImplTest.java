@@ -2,6 +2,7 @@ package com.imooc.sell.service.impl;
 
 import com.imooc.sell.dataobject.OrderDetail;
 import com.imooc.sell.dto.OrderDTO;
+import com.imooc.sell.enums.OrderStatusEnum;
 import com.imooc.sell.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
@@ -69,6 +70,9 @@ public class OrderServiceImplTest {
 
     @Test
     public void cancel() {
+        OrderDTO result = orderService.findOne(ORDER_ID);
+        orderService.cancel(result);
+        Assert.assertEquals(OrderStatusEnum.CANCEL.getCode(),result.getOrderStatus());
     }
 
     @Test
