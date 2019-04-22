@@ -3,6 +3,7 @@ package com.imooc.sell.VO;
 
 //http请求返回的最外层对象
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 @Data
