@@ -18,3 +18,7 @@ server:
 #  level:
 #    com.imooc.LoggerTest: debug
   # file: /Users/micheal/Desktop/SpringBoot/sell/logs/file
+
+wechat:
+  myAppId: wx77dac90e36ce6183
+  myAppSecret: 6ab6dcf02f214beba250ef643cabdfdf
